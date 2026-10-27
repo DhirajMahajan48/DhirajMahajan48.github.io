@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhiraj Mahajan — QA Engineer</title>
+  <meta name="description" content="Dhiraj Mahajan — Assistant QA Engineer in Pune. Manual & automation testing: Playwright, Selenium, Cucumber, load, smoke, regression, API, SQL and end-to-end testing for AI-driven products." />
+  <meta property="og:title" content="Dhiraj Mahajan — QA Engineer" />
+  <meta property="og:description" content="I break software before your users do. Playwright · Selenium · Load · Regression · E2E · AI output validation." />
+  <meta property="og:image" content="assets/dhiraj.png" />
+  <meta name="theme-color" content="#070605" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23070605'/><circle cx='32' cy='32' r='18' fill='%23ffb35c'/><path d='M23 32l6 6 12-13' stroke='%23070605' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__box">
+      <div class="preloader__head"><span></span><span></span><span></span><em>portfolio.spec.js</em></div>
+      <ul class="preloader__log" id="preloaderLog"></ul>
+      <div class="preloader__bar"><i id="preloaderBar"></i></div>
+    </div>
+  </div>
+
+  <!-- ============ AMBIENT LAYERS ============ -->
+  <canvas id="neural" class="neural" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"><span>VIEW</span></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__logo" aria-label="Dhiraj Mahajan home">
+      <span class="nav__logo-mark">DM</span><span class="nav__logo-dot"></span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#lab">Test Lab</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav__mobile-only">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn--small btn--glow magnetic nav__cta">Hire me</a>
+    <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero__copy">
+        <div class="pill reveal"><span class="pulse"></span> Assistant QA Engineer · Redrob by McKinley Rice</div>
+        <h1 class="hero__title">
+          <span class="line"><span class="reveal-up">I break software</span></span>
+          <span class="line"><span class="reveal-up d1">before your <em class="gradient-text">users</em> do.</span></span>
+        </h1>
+        <p class="hero__typed reveal d2">
+          <span class="mono muted">$ run --suite</span>
+          <span class="typed" id="typed">End-to-End Flows</span><span class="caret"></span>
+        </p>
+        <p class="hero__lead reveal d2">
+          QA engineer with <strong>2 years</strong> of manual &amp; automation testing across <strong>web, Android and iOS</strong> —
+          load, smoke, regression, API, SQL and end-to-end testing for <strong>AI-driven hiring</strong> and
+          <strong>investment banking</strong> products.
+        </p>
+        <div class="hero__actions reveal d3">
+          <a href="#projects" class="btn btn--glow magnetic">See my work <span class="arrow">→</span></a>
+          <a href="assets/Dhiraj_Mahajan_QA_Resume.pdf" download class="btn btn--resume magnetic" data-resume>
+            <span class="dl-icon" aria-hidden="true">
+              <svg class="dl-icon__arrow" viewBox="0 0 24 24"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
+              <svg class="dl-icon__check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+            </span>
+            <span class="dl-label">Download resume</span>
+            <span class="btn--resume__tag mono">PDF</span>
+          </a>
+          <a href="https://www.linkedin.com/in/dhiraj-mahajan-qa-engineer" target="_blank" rel="noopener" class="btn btn--linkedin magnetic" aria-label="Open Dhiraj Mahajan's LinkedIn profile">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            LinkedIn
+            <span class="arrow">↗</span>
+          </a>
+        </div>
+        <div class="hero__stats reveal d4">
+          <div class="stat"><b><span class="count" data-to="2">0</span>+</b><small>Years in QA</small></div>
+          <div class="stat"><b><span class="count" data-to="99">0</span>%</b><small>Test-case accuracy</small></div>
+          <div class="stat"><b><span class="count" data-to="3">0</span></b><small>Major products</small></div>
+          <div class="stat"><b><span class="count" data-to="3">0</span></b><small>Web · Android · iOS</small></div>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal d2">
+        <div class="portrait" id="portrait">
+          <div class="portrait__halo"></div>
+          <div class="portrait__frame">
+            <img src="assets/dhiraj.png" alt="Portrait of Dhiraj Mahajan" class="portrait__img" />
+            <img src="assets/dhiraj.png" alt="" aria-hidden="true" class="portrait__img portrait__glitch g1" />
+            <img src="assets/dhiraj.png" alt="" aria-hidden="true" class="portrait__img portrait__glitch g2" />
+            <div class="portrait__scan"></div>
+          </div>
+          <div class="portrait__hud mono">
+            <span>SUBJECT: DHIRAJ_MAHAJAN</span>
+            <span>LOC: PUNE, IN</span>
+            <span class="ok">STATUS: ALL TESTS PASSED</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll to about"><span></span></a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Playwright</span><b>✦</b><span>Selenium</span><b>✦</b><span>Load Testing</span><b>✦</b><span>Regression</span><b>✦</b>
+        <span>Smoke &amp; Sanity</span><b>✦</b><span>End-to-End</span><b>✦</b><span>API · Postman</span><b>✦</b><span>SQL</span><b>✦</b>
+        <span>JMeter</span><b>✦</b><span>Cucumber BDD</span><b>✦</b><span>AI Output Validation</span><b>✦</b><span>Jenkins CI/CD</span><b>✦</b>
+        <span>Playwright</span><b>✦</b><span>Selenium</span><b>✦</b><span>Load Testing</span><b>✦</b><span>Regression</span><b>✦</b>
+        <span>Smoke &amp; Sanity</span><b>✦</b><span>End-to-End</span><b>✦</b><span>API · Postman</span><b>✦</b><span>SQL</span><b>✦</b>
+        <span>JMeter</span><b>✦</b><span>Cucumber BDD</span><b>✦</b><span>AI Output Validation</span><b>✦</b><span>Jenkins CI/CD</span><b>✦</b>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="section__label reveal"><span>01</span> About</div>
+      <div class="about__grid">
+        <div class="about__photo reveal tilt">
+          <div class="idcard">
+            <div class="idcard__top mono"><span>QA · ID</span><span>M2</span></div>
+            <div class="idcard__img">
+              <img src="assets/dhiraj.png" alt="Dhiraj Mahajan" loading="lazy" />
+            </div>
+            <div class="idcard__body">
+              <strong>Dhiraj Mahajan</strong>
+              <small class="mono">Assistant QA Engineer</small>
+              <div class="barcode" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+        <div class="about__copy">
+          <h2 class="h2 reveal">Quality isn't a phase.<br /><span class="gradient-text">It's the whole pipeline.</span></h2>
+          <p class="reveal d1">
+            I'm an Assistant QA Engineer based in Pune with 2 years of hands-on experience in <strong>manual and automation testing</strong>.
+            I test full user journeys end to end — from a recruiter posting a job to a candidate getting hired, from a
+            people search to an email landing in an inbox — on web, Android and iOS.
+          </p>
+          <p class="reveal d1">
+            I write automation in <strong>Playwright (JavaScript)</strong> and <strong>Selenium (Java)</strong> with Cucumber BDD and the
+            Page Object Model, build load-testing frameworks, validate APIs in Postman, and check that AI-generated outputs —
+            candidate matching, assessments — are accurate and consistent. I also use <strong>prompt engineering</strong> to generate
+            test cases, test data and edge-case scenarios faster.
+          </p>
+          <div class="about__facts reveal d2">
+            <div><small>Based in</small><b>Pune, Maharashtra</b></div>
+            <div><small>Education</small><b>BCA · Tilak Maharashtra Vidyapeeth</b></div>
+            <div><small>Languages</small><b>English · Hindi · Marathi</b></div>
+            <div><small>Way of working</small><b>Agile · Scrum ceremonies</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CAPABILITIES ============ -->
+    <section class="section" id="capabilities">
+      <div class="section__label reveal"><span>02</span> Capabilities</div>
+      <div class="section__head">
+        <h2 class="h2 reveal">Every layer, <span class="gradient-text">every scenario.</span></h2>
+        <p class="muted reveal d1">From a two-minute smoke check to a full load run — the kinds of testing I own.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal tilt">
+          <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M4 12h4l3-7 4 14 3-7h2"/></svg></div>
+          <span class="card__num mono">01</span>
+          <h3>Load &amp; Performance</h3>
+          <p>Built load-testing frameworks in Playwright (JS) and ran performance tests in Apache JMeter to see how systems behave under pressure.</p>
+          <div class="tags"><span>Playwright</span><span>JMeter</span></div>
+        </article>
+        <article class="card reveal d1 tilt">
+          <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M4 4v6h6M20 20v-6h-6"/><path d="M20 10a8 8 0 0 0-14-4L4 10M4 14a8 8 0 0 0 14 4l2-4"/></svg></div>
+          <span class="card__num mono">02</span>
+          <h3>Regression · Smoke · Sanity</h3>
+          <p>Release-gating suites that confirm what worked yesterday still works today — and that every new build is stable enough to test.</p>
+          <div class="tags"><span>Release QA</span><span>Retesting</span></div>
+        </article>
+        <article class="card reveal d2 tilt">
+          <div class="card__icon"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><path d="M7 12h10M14 9l3 3-3 3"/></svg></div>
+          <span class="card__num mono">03</span>
+          <h3>End-to-End Flows</h3>
+          <p>Whole user journeys across Candidate, Recruiter and Institution modules — hiring pipelines, assessments, billing and payments.</p>
+          <div class="tags"><span>Functional</span><span>Integration</span></div>
+        </article>
+        <article class="card reveal d3 tilt">
+          <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M8 6l-5 6 5 6M16 6l5 6-5 6M13 4l-2 16"/></svg></div>
+          <span class="card__num mono">04</span>
+          <h3>Test Automation</h3>
+          <p>Playwright (JS) and Selenium (Java) with Cucumber BDD, TestNG and the Page Object Model — reusable, low-maintenance scripts.</p>
+          <div class="tags"><span>POM</span><span>BDD</span><span>XPath/CSS</span></div>
+        </article>
+        <article class="card reveal tilt">
+          <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h6"/><circle cx="18" cy="16" r="3"/></svg></div>
+          <span class="card__num mono">05</span>
+          <h3>API Testing</h3>
+          <p>Validating backend business logic with full CRUD coverage in Postman — status codes, payloads, and edge cases.</p>
+          <div class="tags"><span>Postman</span><span>REST</span></div>
+        </article>
+        <article class="card reveal d1 tilt">
+          <div class="card__icon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg></div>
+          <span class="card__num mono">06</span>
+          <h3>SQL &amp; Data Validation</h3>
+          <p>Data and integration testing — checking that what the UI shows, what the API returns and what's stored all agree.</p>
+          <div class="tags"><span>SQL</span><span>Data integrity</span></div>
+        </article>
+        <article class="card reveal d2 tilt">
+          <div class="card__icon"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+          <span class="card__num mono">07</span>
+          <h3>Mobile &amp; Responsive</h3>
+          <p>Android and iOS app builds on real devices, plus responsive checks across screen sizes for every web release.</p>
+          <div class="tags"><span>Android</span><span>iOS</span></div>
+        </article>
+        <article class="card card--ai reveal d3 tilt">
+          <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 5.6L20 10l-5.6 2.4L12 18l-2.4-5.6L4 10l5.6-2.4z"/><path d="M19 16l.9 2.1L22 19l-2.1.9L19 22l-.9-2.1L16 19l2.1-.9z"/></svg></div>
+          <span class="card__num mono">08</span>
+          <h3>AI Output Validation</h3>
+          <p>Testing AI features for accuracy and consistency, and using prompt engineering (role, context, constraints, format) to generate tests.</p>
+          <div class="tags"><span>AI Testing</span><span>Prompting</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section process" id="process">
+      <div class="section__label reveal"><span>03</span> Process</div>
+      <div class="section__head">
+        <h2 class="h2 reveal">How a feature <span class="gradient-text">earns a green tick.</span></h2>
+      </div>
+      <div class="pipeline" id="pipeline">
+        <div class="pipeline__line"><i id="pipelineFill"></i></div>
+        <div class="step reveal"><div class="step__node mono">01</div><h4>Understand</h4><p>Analyse user stories and align with BAs and developers on what "done" means.</p></div>
+        <div class="step reveal d1"><div class="step__node mono">02</div><h4>Design</h4><p>Write test cases and edge-case scenarios — sped up with prompt engineering, reviewed by hand.</p></div>
+        <div class="step reveal d2"><div class="step__node mono">03</div><h4>Automate</h4><p>Script the regression and sanity paths in Playwright or Selenium with POM and BDD.</p></div>
+        <div class="step reveal d3"><div class="step__node mono">04</div><h4>Execute</h4><p>Smoke, functional, regression, mobile, API and load runs across every platform.</p></div>
+        <div class="step reveal d4"><div class="step__node mono">05</div><h4>Report</h4><p>Log and chase defects in JIRA; share Extent Reports with QA and management.</p></div>
+        <div class="step reveal d5"><div class="step__node mono">06</div><h4>Ship</h4><p>Scheduled runs in Jenkins CI/CD with Maven and Git keep every build honest.</p></div>
+      </div>
+    </section>
+
+    <!-- ============ TEST LAB (TERMINAL) ============ -->
+    <section class="section lab" id="lab">
+      <div class="section__label reveal"><span>04</span> Test Lab</div>
+      <div class="lab__grid">
+        <div class="lab__copy">
+          <h2 class="h2 reveal">Watch a suite <span class="gradient-text">run.</span></h2>
+          <p class="muted reveal d1">A taste of the three stacks I work in every day. Pick a runner and hit run.</p>
+          <div class="lab__tabs reveal d2" role="tablist">
+            <button class="lab__tab is-active" data-suite="playwright" role="tab" aria-selected="true">Playwright · JS</button>
+            <button class="lab__tab" data-suite="cucumber" role="tab" aria-selected="false">Selenium + Cucumber · Java</button>
+            <button class="lab__tab" data-suite="jmeter" role="tab" aria-selected="false">JMeter · Load</button>
+          </div>
+          <button class="btn btn--glow magnetic reveal d3" id="rerun">▶ Run suite</button>
+          <p class="footnote mono reveal d3">* simulated output for illustration</p>
+        </div>
+        <div class="terminal reveal d1 tilt-soft">
+          <div class="terminal__bar">
+            <span></span><span></span><span></span>
+            <em class="mono" id="termTitle">~/kaabil-e2e — zsh</em>
+          </div>
+          <pre class="terminal__body mono" id="termBody" aria-live="polite"></pre>
+          <div class="terminal__summary mono" id="termSummary">
+            <span class="sum-pass">0 passed</span><span class="sum-fail">0 failed</span><span class="sum-time">0.0s</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="section__label reveal"><span>05</span> Experience</div>
+      <div class="section__head">
+        <h2 class="h2 reveal">Where I've been <span class="gradient-text">breaking things.</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-item__dot is-live"></div>
+          <div class="tl-item__date mono">MAY 2026 — PRESENT</div>
+          <div class="tl-item__card">
+            <h3>Assistant QA Engineer (M2)</h3>
+            <div class="tl-item__org">Redrob by McKinley Rice</div>
+            <p>Owning QA for AI-driven hiring and search products — Kaabil and People Search — across web, Android and iOS. Automation in Playwright (JS), load-testing frameworks, API validation and AI output checks.</p>
+            <div class="tags"><span>Playwright</span><span>Load testing</span><span>Mobile</span><span>AI validation</span></div>
+          </div>
+        </div>
+        <div class="tl-item reveal d1">
+          <div class="tl-item__dot"></div>
+          <div class="tl-item__date mono">JAN 2025 — MAY 2026</div>
+          <div class="tl-item__card">
+            <h3>Automation Test Engineer</h3>
+            <div class="tl-item__org">Cognopi Solutions Pvt. Ltd.</div>
+            <p>Automation for an investment banking product with Selenium (Java), Cucumber BDD and POM. Integrated Extent Reports and Jenkins, and ran functional, smoke, sanity and regression cycles in Agile sprints.</p>
+            <div class="tags"><span>Selenium</span><span>Cucumber</span><span>Maven</span><span>Jenkins</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="section__label reveal"><span>06</span> Projects</div>
+      <div class="section__head">
+        <h2 class="h2 reveal">Products I've <span class="gradient-text">signed off on.</span></h2>
+      </div>
+
+      <div class="projects">
+        <!-- Project 1 -->
+        <article class="project reveal" data-cursor="OPEN">
+          <div class="project__head">
+            <span class="project__idx mono">P/01</span>
+            <div>
+              <h3>Kaabil</h3>
+              <p class="project__sub">AI-based hiring &amp; learning platform · Web, Android, iOS</p>
+            </div>
+            <span class="project__role mono">Assistant QA Engineer (M2)</span>
+            <button class="project__toggle" aria-expanded="false" aria-label="Show Kaabil details"><span></span><span></span></button>
+          </div>
+          <div class="project__meta">
+            <div class="tags"><span>Functional</span><span>Regression</span><span>Smoke</span><span>Sanity</span><span>UI</span><span>Responsive</span><span>Mobile</span><span>Data &amp; Integration</span><span>Billing</span><span>Load</span><span>AI Output Validation</span></div>
+          </div>
+          <div class="project__body">
+            <div class="project__inner">
+              <p class="project__desc">An AI-based hiring and learning platform with <b>Institution</b>, <b>Recruiter</b> and <b>Candidate</b> modules.</p>
+              <ul class="checklist">
+                <li>Tested assessment, test and learning-path creation — learning videos, tests linked to each path, and student management.</li>
+                <li>Tested the hiring pipeline (Applied → Interview → Assessment → Hire / Reject), job posting, candidate matching and attaching assessments to jobs.</li>
+                <li>Validated AI certification and assessment features and the connections between the Candidate, Recruiter and Institution modules.</li>
+                <li>Designed and executed high-quality test cases with 99% accuracy for strong coverage and defect detection.</li>
+                <li>Tested billing and payment for student and recruiter plans, plus the plan and package flow for reaching recruiters.</li>
+                <li>Mobile (Android &amp; iOS), responsive and web testing, including regression, smoke, data and integration testing.</li>
+                <li>Wrote Playwright (JS) automation and the load-testing framework in VS Code; logged defects in JIRA.</li>
+              </ul>
+              <div class="project__tools mono">Tools → Playwright (JS) · VS Code · Postman · JIRA · Git · Android &amp; iOS builds</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project reveal" data-cursor="OPEN">
+          <div class="project__head">
+            <span class="project__idx mono">P/02</span>
+            <div>
+              <h3>People Search</h3>
+              <p class="project__sub">Job &amp; people search with email enrichment and direct outreach</p>
+            </div>
+            <span class="project__role mono">Assistant QA Engineer (M2)</span>
+            <button class="project__toggle" aria-expanded="false" aria-label="Show People Search details"><span></span><span></span></button>
+          </div>
+          <div class="project__meta">
+            <div class="tags"><span>Functional</span><span>Regression</span><span>Smoke</span><span>Sanity</span><span>UI</span><span>API</span><span>Responsive</span><span>Load</span><span>AI Output Validation</span></div>
+          </div>
+          <div class="project__body">
+            <div class="project__inner">
+              <p class="project__desc">A platform to find jobs and people, collect and enrich email IDs, and apply or reach out directly by email.</p>
+              <ul class="checklist">
+                <li>Tested the job search and people search flows end to end.</li>
+                <li>Validated profile data collection and enrichment, including email ID capture.</li>
+                <li>Tested the outreach and direct email-apply flow.</li>
+                <li>Web, responsive and mobile (Android &amp; iOS) testing; regression and smoke runs for every release.</li>
+                <li>Wrote and maintained Playwright (JS) automation using the Page Object Model.</li>
+                <li>Built the load-testing framework in VS Code using Playwright (JS).</li>
+                <li>Validated APIs with Postman and logged defects in JIRA.</li>
+              </ul>
+              <div class="project__tools mono">Tools → Playwright (JS) · VS Code · Postman · JIRA · Git</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project reveal" data-cursor="OPEN">
+          <div class="project__head">
+            <span class="project__idx mono">P/03</span>
+            <div>
+              <h3>Investment Banking</h3>
+              <p class="project__sub">Banking-domain automation · Cognopi Solutions</p>
+            </div>
+            <span class="project__role mono">Automation Test Engineer</span>
+            <button class="project__toggle" aria-expanded="false" aria-label="Show Investment Banking details"><span></span><span></span></button>
+          </div>
+          <div class="project__meta">
+            <div class="tags"><span>Functional</span><span>Regression</span><span>Sanity</span><span>Smoke</span><span>BDD</span></div>
+          </div>
+          <div class="project__body">
+            <div class="project__inner">
+              <ul class="checklist">
+                <li>Analysed user stories and worked with the BA and team to fully understand requirements.</li>
+                <li>Identified regression and sanity test cases for automation; updated scripts using POM and test classes.</li>
+                <li>Created feature files and step definitions, executed the Runner file, and generated Extent Reports.</li>
+                <li>Integrated Extent Reports and Jenkins for execution.</li>
+                <li>Implemented the POM design pattern for reusability.</li>
+                <li>Performed functional, smoke, retesting, sanity and regression testing.</li>
+                <li>Reported and tracked bugs in JIRA; actively involved in Agile ceremonies.</li>
+              </ul>
+              <div class="project__tools mono">Tools → Selenium (Java) · Cucumber BDD · Maven · Playwright (JS)</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section skills" id="skills">
+      <div class="section__label reveal"><span>07</span> Toolkit</div>
+      <div class="skills__grid">
+        <div class="orbit reveal" aria-hidden="true">
+          <div class="orbit__core">
+            <img src="assets/dhiraj.png" alt="" loading="lazy" />
+          </div>
+          <div class="orbit__ring r1">
+            <span style="--a:0deg">Playwright</span><span style="--a:90deg">Selenium</span><span style="--a:180deg">JMeter</span><span style="--a:270deg">Postman</span>
+          </div>
+          <div class="orbit__ring r2">
+            <span style="--a:30deg">Java</span><span style="--a:102deg">JavaScript</span><span style="--a:174deg">SQL</span><span style="--a:246deg">Cucumber</span><span style="--a:318deg">TestNG</span>
+          </div>
+          <div class="orbit__ring r3">
+            <span style="--a:15deg">JIRA</span><span style="--a:75deg">Git</span><span style="--a:135deg">Maven</span><span style="--a:195deg">Jenkins</span><span style="--a:255deg">AI Testing</span><span style="--a:315deg">Prompting</span>
+          </div>
+        </div>
+
+        <div class="skills__list">
+          <h2 class="h2 reveal">The <span class="gradient-text">toolkit.</span></h2>
+          <div class="skillgroup reveal d1">
+            <h4 class="mono">// automation</h4>
+            <div class="tags tags--lg"><span>Playwright</span><span>Selenium WebDriver</span><span>Cucumber</span><span>TestNG</span><span>Page Object Model</span><span>XPath · CSS selectors</span></div>
+          </div>
+          <div class="skillgroup reveal d1">
+            <h4 class="mono">// languages</h4>
+            <div class="tags tags--lg"><span>Java</span><span>JavaScript</span><span>SQL</span><span>Gherkin</span></div>
+          </div>
+          <div class="skillgroup reveal d2">
+            <h4 class="mono">// api · performance</h4>
+            <div class="tags tags--lg"><span>Postman</span><span>REST · CRUD</span><span>Apache JMeter</span><span>Playwright load framework</span></div>
+          </div>
+          <div class="skillgroup reveal d2">
+            <h4 class="mono">// build · ci · tracking</h4>
+            <div class="tags tags--lg"><span>Maven</span><span>Git</span><span>Jenkins CI/CD</span><span>JIRA</span><span>Extent Reports</span><span>VS Code</span></div>
+          </div>
+          <div class="skillgroup reveal d3">
+            <h4 class="mono">// ai</h4>
+            <div class="tags tags--lg"><span>AI Output Validation</span><span>Prompt Engineering</span><span>AI-assisted test design</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="contact__glow" aria-hidden="true"></div>
+      <div class="section__label reveal"><span>08</span> Contact</div>
+      <div class="contact__grid">
+        <div>
+          <div class="avatar reveal">
+            <svg class="avatar__text" viewBox="0 0 200 200" aria-hidden="true">
+              <defs><path id="circlePath" d="M100,100 m-84,0 a84,84 0 1,1 168,0 a84,84 0 1,1 -168,0" /></defs>
+              <text><textPath href="#circlePath">OPEN TO QA ROLES ✦ AUTOMATION ✦ LOAD ✦ E2E ✦ </textPath></text>
+            </svg>
+            <img src="assets/dhiraj.png" alt="Dhiraj Mahajan" loading="lazy" />
+          </div>
+          <h2 class="contact__title reveal">Let's ship<br /><span class="gradient-text nowrap">bug-free.</span></h2>
+          <p class="muted reveal d1">Hiring for QA or need a release tested end to end? I'd love to hear about it.</p>
+
+          <a class="li-card reveal d2" href="https://www.linkedin.com/in/dhiraj-mahajan-qa-engineer" target="_blank" rel="noopener" aria-label="Open Dhiraj Mahajan's LinkedIn profile">
+            <span class="li-card__logo">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            </span>
+            <span class="li-card__text">
+              <small class="mono">Recruiters — start here</small>
+              <strong>Connect on LinkedIn</strong>
+              <span class="li-card__url mono">linkedin.com/in/dhiraj-mahajan-qa-engineer</span>
+            </span>
+            <span class="li-card__go" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></svg>
+            </span>
+          </a>
+
+          <ul class="contact__list reveal d2">
+            <li>
+              <span class="contact__k mono">email</span>
+              <a href="mailto:dhirumahajan48@gmail.com">dhirumahajan48@gmail.com</a>
+              <button class="copy mono" data-copy="dhirumahajan48@gmail.com">copy</button>
+            </li>
+            <li>
+              <span class="contact__k mono">phone</span>
+              <a href="tel:+917020853925">+91 70208 53925</a>
+              <button class="copy mono" data-copy="+917020853925">copy</button>
+            </li>
+            <li>
+              <span class="contact__k mono">location</span>
+              <span>Pune, Maharashtra, India</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form reveal d1" id="contactForm" novalidate>
+          <div class="form__head mono"><span class="dot dot--green"></span> new_message.test.js</div>
+          <label class="field">
+            <span>Your name</span>
+            <input type="text" name="name" required autocomplete="name" placeholder="Jane Recruiter" />
+            <em class="field__err">expect(name).toBeTruthy() ✗</em>
+          </label>
+          <label class="field">
+            <span>Your email</span>
+            <input type="email" name="email" required autocomplete="email" placeholder="jane@company.com" />
+            <em class="field__err">expect(email).toMatch(/@/) ✗</em>
+          </label>
+          <label class="field">
+            <span>Message</span>
+            <textarea name="message" rows="4" required placeholder="We're hiring a QA engineer for…"></textarea>
+            <em class="field__err">expect(message.length).toBeGreaterThan(0) ✗</em>
+          </label>
+          <button type="submit" class="btn btn--glow btn--block magnetic">Send message <span class="arrow">→</span></button>
+          <div class="form__or mono"><span>or grab my resume</span></div>
+          <a href="assets/Dhiraj_Mahajan_QA_Resume.pdf" download class="resume-tile" data-resume aria-label="Download Dhiraj Mahajan's resume, PDF">
+            <span class="resume-tile__doc" aria-hidden="true">
+              <svg viewBox="0 0 40 48"><path class="sheet" d="M6 2h20l10 10v32a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path class="fold" d="M26 2v8a2 2 0 0 0 2 2h8"/><path class="lines" d="M11 22h18M11 28h18M11 34h11"/></svg>
+              <em class="mono">PDF</em>
+            </span>
+            <span class="resume-tile__text">
+              <strong>Dhiraj_Mahajan_QA_Resume.pdf</strong>
+              <small class="mono"><span class="dl-label">PDF · 2 pages · 138 KB</span></small>
+            </span>
+            <span class="resume-tile__btn dl-icon" aria-hidden="true">
+              <svg class="dl-icon__arrow" viewBox="0 0 24 24"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
+              <svg class="dl-icon__check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+            </span>
+            <i class="resume-tile__progress" aria-hidden="true"></i>
+          </a>
+          <p class="form__note mono" id="formNote"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__cta">
+      <p class="mono"><span class="pulse"></span> Open to QA &amp; automation roles</p>
+    </div>
+
+    <svg class="footer__name" viewBox="0 0 1000 100" role="img" aria-label="Dhiraj Mahajan">
+      <defs>
+        <linearGradient id="nameFill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#ffdcab" stop-opacity="0.9" />
+          <stop offset="0.6" stop-color="#ff7a1a" stop-opacity="0.45" />
+          <stop offset="1" stop-color="#ff7a1a" stop-opacity="0.05" />
+        </linearGradient>
+        <linearGradient id="nameSweep" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0.35" stop-color="#fff" stop-opacity="0" />
+          <stop offset="0.5" stop-color="#fff" stop-opacity="0.55" />
+          <stop offset="0.65" stop-color="#fff" stop-opacity="0" />
+          <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="5s" repeatCount="indefinite" />
+        </linearGradient>
+      </defs>
+      <text x="500" y="86" text-anchor="middle" textLength="990" lengthAdjust="spacingAndGlyphs" fill="url(#nameFill)">DHIRAJ MAHAJAN</text>
+      <text x="500" y="86" text-anchor="middle" textLength="990" lengthAdjust="spacingAndGlyphs" fill="url(#nameSweep)" aria-hidden="true">DHIRAJ MAHAJAN</text>
+    </svg>
+
+    <div class="footer__row mono">
+      <span>© <span id="year">2026</span> Dhiraj Mahajan</span>
+      <span class="footer__pass"><span class="tick">✓</span> designed, built &amp; tested in Pune</span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
